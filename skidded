@@ -84,8 +84,7 @@ function Aiming.UpdateFOV()
     -- // Set Circle Properties
     circle.Visible = Aiming.ShowFOV
     circle.Radius = (Aiming.FOV * 3)
-    circle.Position = element.Position = UDim2.new(0.5, 0, 0.5, 0)
-element.AnchorPoint = Vector2.new(0.5, 0.5)
+    circle.Position = UDim2.new(0.5, -AimRadius, 0.5, -AimRadius)
     circle.NumSides = Aiming.FOVSides
     circle.Color = Aiming.FOVColour
 
