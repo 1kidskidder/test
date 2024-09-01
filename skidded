@@ -83,7 +83,7 @@ function Aiming.UpdateFOV()
 
     -- // Set Circle Properties
     circle.Visible = Aiming.ShowFOV
-    circle.Radius = AimCircle.Size = UDim2.new(0, AimRadius * 2, 0, AimRadius * 2)
+    circle.Radius = (Aiming.FOV * 3)
     circle.Position = AimCircle.Position = UDim2.new(0.5, -AimRadius, 0.5, -AimRadius) -- Center the circle around the middle of the screen
     circle.NumSides = Aiming.FOVSides
     circle.Color = Aiming.FOVColour
